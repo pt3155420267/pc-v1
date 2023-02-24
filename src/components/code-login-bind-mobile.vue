@@ -2,14 +2,14 @@
   <div class="mask" v-if="status">
     <div style="height: 440px" class="dialog-login-box">
       <div class="tabs">
-        <div class="item-tab active">请绑定手机号</div>
+        <div class="item-tab active">请绑定用户名</div>
         <a v-if="active" class="linkTab2" @click="cancel()">取消绑定>></a>
       </div>
       <div class="box">
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号码"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="messageForm.mobile"
             class="input"
@@ -122,11 +122,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.captcha) {
@@ -167,11 +167,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请填写绑定手机号码");
+        this.$message.error("请填写绑定用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       this.loading = true;

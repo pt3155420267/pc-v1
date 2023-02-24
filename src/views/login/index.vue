@@ -15,7 +15,7 @@
           <div class="input-item">
             <input
               type="text"
-              placeholder="请输入手机号"
+              placeholder="请输入用户名"
               autocomplete="off"
               v-model="passwordForm.mobile"
               class="input"
@@ -106,11 +106,11 @@ export default {
         return;
       }
       if (!this.passwordForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.passwordForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.passwordForm.password) {

@@ -2,7 +2,7 @@
   <div class="mask" v-if="status">
     <div style="height: 480px" class="dialog-login-box">
       <div class="tabs">
-        <div class="item-tab active">验证原手机号</div>
+        <div class="item-tab active">验证原用户名</div>
         <img
           class="btn-close"
           @click="cancel()"
@@ -12,7 +12,7 @@
       <div class="box">
         <div class="box-mobile">
           <span
-            >原手机号码验证：<strong>{{ mobile }}</strong></span
+            >原用户名验证：<strong>{{ mobile }}</strong></span
           >
         </div>
         <div class="input-item">
@@ -117,11 +117,11 @@ export default {
         return;
       }
       if (!this.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.captcha) {

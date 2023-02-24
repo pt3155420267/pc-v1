@@ -207,7 +207,7 @@ export default {
         let res = await this.$api.User.Detail();
         this.loginHandle(res.data);
 
-        // 强制绑定手机号
+        // 强制绑定用户名
         if (
           this.config &&
           res.data.is_bind_mobile === 0 &&

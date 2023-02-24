@@ -20,13 +20,13 @@
             placeholder="请填写收货人姓名"
           />
         </div>
-        <div class="label">收货人手机号</div>
+        <div class="label">收货人用户名</div>
         <div class="input">
           <input
             type="number"
             class="input-item"
             v-model="form.mobile"
-            placeholder="请填写收货人手机号码"
+            placeholder="请填写收货人用户名"
           />
         </div>
         <div class="label">收件地址</div>

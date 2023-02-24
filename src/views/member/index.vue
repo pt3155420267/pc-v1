@@ -139,7 +139,7 @@
               </div>
               <div class="item-line">
                 <div class="item-left">
-                  <div class="item-name">手机号码</div>
+                  <div class="item-name">用户名</div>
                   <div class="item-value" v-if="user.is_bind_mobile === 1">
                     {{
                       user.mobile.substr(0, 3) + "****" + user.mobile.substr(7)
@@ -152,10 +152,10 @@
                     v-if="user.is_bind_mobile === 1"
                     @click="goChangeMobile()"
                   >
-                    换绑手机号
+                    换绑用户名
                   </div>
                   <div class="btn" v-else @click="goBindMobile()">
-                    绑定手机号
+                    绑定用户名
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default {
     },
     goChangePassword() {
       if (this.user.is_bind_mobile !== 1) {
-        this.$message.error("请绑定手机号");
+        this.$message.error("请绑定用户名");
         return;
       }
       this.changePasswordVisible = true;

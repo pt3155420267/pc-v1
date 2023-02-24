@@ -12,7 +12,7 @@
       <div class="box">
         <div class="box-mobile">
           <span
-            >绑定手机号：<strong>{{ mobile }}</strong></span
+            >绑定用户名：<strong>{{ mobile }}</strong></span
           >
         </div>
         <div class="input-item">
@@ -123,11 +123,11 @@ export default {
         return;
       }
       if (!this.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.captcha) {
@@ -169,11 +169,11 @@ export default {
         return;
       }
       if (!this.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.sms) {

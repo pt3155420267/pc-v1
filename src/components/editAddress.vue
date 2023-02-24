@@ -20,11 +20,11 @@
             required=""
           />
         </div>
-        <div class="label">收货人手机号</div>
+        <div class="label">收货人用户名</div>
         <div class="input-item">
           <input
             type="number"
-            placeholder="请填写收货人手机号码"
+            placeholder="请填写收货人用户名"
             autocomplete="off"
             v-model="form.mobile"
             class="input"
@@ -168,7 +168,7 @@ export default {
         return;
       }
       if (!this.form.mobile) {
-        this.$message.error("请填写收货人手机号码");
+        this.$message.error("请填写收货人用户名");
         return;
       }
       if (!this.form.province) {

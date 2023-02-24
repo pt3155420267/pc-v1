@@ -24,7 +24,7 @@
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="passwordForm.mobile"
             class="input"
@@ -92,7 +92,7 @@
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="messageForm.mobile"
             class="input"
@@ -185,7 +185,7 @@
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="messageForm.mobile"
             class="input"
@@ -285,7 +285,7 @@
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="messageForm.mobile"
             class="input"
@@ -368,7 +368,7 @@
       v-if="dialogStatus === 13"
     >
       <div class="tabs">
-        <div class="item-tab active">请绑定手机号</div>
+        <div class="item-tab active">请绑定用户名</div>
         <a v-if="notCancel" class="linkTab2" @click="goBindOut">取消绑定>></a>
         <img
           v-if="!notCancel"
@@ -381,7 +381,7 @@
         <div class="input-item">
           <input
             type="text"
-            placeholder="请输入手机号码"
+            placeholder="请输入用户名"
             autocomplete="off"
             v-model="messageForm.mobile"
             class="input"
@@ -598,11 +598,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请填写绑定手机号码");
+        this.$message.error("请填写绑定用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       this.loading = true;
@@ -642,11 +642,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.captcha) {
@@ -778,11 +778,11 @@ export default {
         return;
       }
       if (!this.passwordForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.passwordForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.passwordForm.password) {
@@ -816,11 +816,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.sms) {
@@ -858,11 +858,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.sms) {
@@ -900,11 +900,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请输入手机号");
+        this.$message.error("请输入用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       if (!this.messageForm.sms) {
@@ -942,11 +942,11 @@ export default {
         return;
       }
       if (!this.messageForm.mobile) {
-        this.$message.error("请填写绑定手机号码");
+        this.$message.error("请填写绑定用户名");
         return;
       }
       if (!this.$utils.isPoneAvailable(this.messageForm.mobile)) {
-        this.$message.error("请输入正确的手机号");
+        this.$message.error("请输入正确的用户名");
         return;
       }
       this.loading = true;
